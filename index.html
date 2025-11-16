@@ -30,7 +30,7 @@ header {
   gap: 12px;
 }
 
-#gallery img, 
+#gallery img,
 #gallery video {
   width: 100%;
   height: 160px;
@@ -39,55 +39,23 @@ header {
   background: #ddd;
 }
 </style>
+
 </head>
 <body>
 
 <header>Galerie Max & Potes</header>
 
-<div id="gallery">Chargement...</div>
+<!-- ⭐ C'EST ICI QUE TU METS TES IMAGES + VIDÉOS -->
+<div id="gallery">
 
-<script>
-// URL du fichier files.json sur ton dépôt GitHub Pages
-const FILES_URL = "files.json";
+    <!-- PHOTO -->
+    <img src="https://raw.githubusercontent.com/Max2143545/maxime/main/IMG_20250924_093956%20(1).jpg" />
 
-async function loadFiles() {
-  try {
-    const res = await fetch(FILES_URL);
+    <!-- VIDEO -->
+    <video src="https://raw.githubusercontent.com/Max2143545/maxime/main/VID_20251014_165714.mp4" controls></video>
 
-    if (!res.ok) {
-      document.getElementById("gallery").innerHTML = "Impossible de charger files.json";
-      return;
-    }
-
-    const data = await res.json();
-    const gallery = document.getElementById("gallery");
-    gallery.innerHTML = "";
-
-    // Charger les images
-    data.images.forEach(filename => {
-      const img = document.createElement("img");
-      img.src = "images/" + filename;
-      img.onerror = () => img.style.display = "none";
-      gallery.appendChild(img);
-    });
-
-    // Charger les vidéos
-    data.videos.forEach(filename => {
-      const video = document.createElement("video");
-      video.src = "videos/" + filename;
-      video.controls = true;
-      video.onerror = () => video.style.display = "none";
-      gallery.appendChild(video);
-    });
-
-  } catch (err) {
-    document.getElementById("gallery").innerHTML = "Erreur lors du chargement.";
-  }
-}
-
-loadFiles();
-</script>
+</div>
+<!-- ⭐ FIN DE LA LISTE DES FICHIERS -->
 
 </body>
 </html>
-
