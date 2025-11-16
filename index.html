@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
   }
+
   header {
     background: #ff6600;
     color: white;
@@ -19,6 +20,7 @@
     padding: 20px 0;
     font-size: 2em;
   }
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -26,31 +28,30 @@
     padding: 20px;
     gap: 20px;
   }
+
   .item {
     background: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    max-width: 400px;
-    width: 100%;
+    max-width: 350px;
   }
+
   .item img, .item video {
     width: 100%;
     border-radius: 10px;
   }
+
   .description {
-    margin-top: 8px;
+    margin-top: 5px;
     font-size: 0.9em;
     color: #333;
   }
+
   @media (max-width: 600px) {
-    .gallery {
-      flex-direction: column;
-      align-items: center;
-    }
+    .gallery { flex-direction: column; align-items: center; }
   }
 </style>
-
 </head>
 <body>
 
@@ -58,39 +59,122 @@
 
 <div class="gallery">
 
-  <!-- === MÉDIAS À REMPLIR === -->
+  <!-- ---------------------- PHOTOS ---------------------- -->
 
   <!-- PHOTO 1 -->
   <div class="item">
     <img src="https://github.com/Max2143545/les-potos/blob/main/IMG_20251001_091330.jpg?raw=true" alt="Photo 1">
-    <div class="description">Photo 1</div>
+    <div class="description">Photo de BG</div>
   </div>
+
+  <!-- PHOTO 2 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo2.jpg" alt="Photo 2">
+    <div class="description">Photo 2</div>
+  </div>
+
+  <!-- PHOTO 3 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo3.jpg" alt="Photo 3">
+    <div class="description">Photo 3</div>
+  </div>
+
+  <!-- PHOTO 4 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo4.jpg" alt="Photo 4">
+    <div class="description">Photo 4</div>
+  </div>
+
+  <!-- PHOTO 5 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo5.jpg" alt="Photo 5">
+    <div class="description">Photo 5</div>
+  </div>
+
+  <!-- PHOTO 6 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo6.jpg" alt="Photo 6">
+    <div class="description">Photo 6</div>
+  </div>
+
+  <!-- PHOTO 7 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo7.jpg" alt="Photo 7">
+    <div class="description">Photo 7</div>
+  </div>
+
+  <!-- PHOTO 8 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo8.jpg" alt="Photo 8">
+    <div class="description">Photo 8</div>
+  </div>
+
+  <!-- PHOTO 9 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo9.jpg" alt="Photo 9">
+    <div class="description">Photo 9</div>
+  </div>
+
+  <!-- PHOTO 10 -->
+  <div class="item">
+    <img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo10.jpg" alt="Photo 10">
+    <div class="description">Photo 10</div>
+  </div>
+
+  <!-- PHOTO 11-20 (modèle répété) -->
+  <!-- Tu changes juste photo11.jpg etc. -->
+  <!-- Je te les mets déjà en place -->
+
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo11.jpg"><div class="description">Photo 11</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo12.jpg"><div class="description">Photo 12</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo13.jpg"><div class="description">Photo 13</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo14.jpg"><div class="description">Photo 14</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo15.jpg"><div class="description">Photo 15</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo16.jpg"><div class="description">Photo 16</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo17.jpg"><div class="description">Photo 17</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo18.jpg"><div class="description">Photo 18</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo19.jpg"><div class="description">Photo 19</div></div>
+  <div class="item"><img src="https://raw.githubusercontent.com/Max2143545/les-potos/main/photo20.jpg"><div class="description">Photo 20</div></div>
+
+
+  <!-- ---------------------- VIDÉOS ---------------------- -->
 
   <!-- VIDEO 1 -->
   <div class="item">
     <video controls>
-      <source src="https://github.com/Max2143545/les-potos/blob/main/video1.mp4?raw=true" type="video/mp4">
+      <source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/VID_20251014_165714.mp4" type="video/mp4">
     </video>
     <div class="description">Vidéo 1</div>
   </div>
 
-  <!-- === BLOCS à DUPLIQUER AUTANT QUE TU VEUX === -->
-
-  <!-- PHOTO -->
-  <div class="item">
-    <img src="LIEN_IMAGE_A_CHANGER?raw=true" alt="Photo">
-    <div class="description">Description photo.</div>
-  </div>
-
-  <!-- VIDEO -->
+  <!-- VIDEO 2 -->
   <div class="item">
     <video controls>
-      <source src="LIEN_VIDEO_A_CHANGER?raw=true" type="video/mp4">
+      <source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video2.mp4" type="video/mp4">
     </video>
-    <div class="description">Description vidéo.</div>
+    <div class="description">Vidéo 2</div>
   </div>
 
-  <!-- Tu peux copier-coller ces deux blocs 50 fois si tu veux ! -->
+  <!-- etc. jusqu'à video20 -->
+
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video3.mp4"></video><div class="description">Vidéo 3</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video4.mp4"></video><div class="description">Vidéo 4</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video5.mp4"></video><div class="description">Vidéo 5</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video6.mp4"></video><div class="description">Vidéo 6</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video7.mp4"></video><div class="description">Vidéo 7</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video8.mp4"></video><div class="description">Vidéo 8</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video9.mp4"></video><div class="description">Vidéo 9</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video10.mp4"></video><div class="description">Vidéo 10</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video11.mp4"></video><div class="description">Vidéo 11</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video12.mp4"></video><div class="description">Vidéo 12</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video13.mp4"></video><div class="description">Vidéo 13</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video14.mp4"></video><div class="description">Vidéo 14</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video15.mp4"></video><div class="description">Vidéo 15</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video16.mp4"></video><div class="description">Vidéo 16</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video17.mp4"></video><div class="description">Vidéo 17</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video18.mp4"></video><div class="description">Vidéo 18</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video19.mp4"></video><div class="description">Vidéo 19</div></div>
+  <div class="item"><video controls><source src="https://raw.githubusercontent.com/Max2143545/les-potos/main/video20.mp4"></video><div class="description">Vidéo 20</div></div>
 
 </div>
 
